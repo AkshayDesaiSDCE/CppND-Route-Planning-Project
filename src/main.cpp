@@ -18,7 +18,7 @@ static std::optional<std::vector<std::byte>> ReadFile(const std::string &path)
     
     auto size = is.tellg();
     std::vector<std::byte> contents(size);    
-    
+    //
     is.seekg(0);
     is.read((char*)contents.data(), size);
 
